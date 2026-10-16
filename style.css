@@ -35,6 +35,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+      transition: transform 0.7s ease-in-out,
+                box-shadow 0.7s ease-in-out;
+}
+.logo:hover {
+    transform: rotate(360deg) scale(1.15);
+
+    box-shadow:
+        0 0 0.5rem #00d43b,
+        0 0 1rem #00d43b99,
+        0 0 1.8rem #00d43b66;
 }
 
 .logo img {
@@ -44,9 +55,7 @@ body {
     transition: transform 0.7s ease-in-out;
 }
 
-.logo:hover img {
-    transform: rotate(360deg);
-}
+
 
 .header h1 {
     margin: 0;
